@@ -57,18 +57,18 @@
    #:*home-resource*
    #:*uri-content-types-function*
    ;; server control
-   ;; 
+   ;;
    #:start
    #:stop
    #:started-p
    ;; route definition
-   ;; 
+   ;;
    #:defresource
    #:defroute
    #:delete-resource
    #:defgenpath
    ;; converting arguments
-   ;; 
+   ;;
    #:arguments-to-uri
    #:uri-to-arguments
    #:read-for-resource
@@ -78,7 +78,7 @@
    #:unconvertible-argument
    #:fragment
    ;; error handling
-   ;; 
+   ;;
    #:http-condition
    #:status-code
    #:http-error
@@ -88,7 +88,7 @@
    #:no-matching-content-types
    #:explain-condition
    ;; request handling helpers
-   ;; 
+   ;;
    #:request-body
    #:handle-request
    #:*catch-errors*
@@ -100,6 +100,7 @@
    #:backend-payload
    #:content-class-name
    #:*clack-request-env*
+   #:*clack-response-headers*
    #:make-clack-app
    #:make-hunchentoot-app
    ;; default values for some options
@@ -113,4 +114,3 @@
 (defpackage #:snooze-safe-simple-read (:use :cl)
             (:export
              #:safe-simple-read-from-string))
-
